@@ -12,13 +12,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lesson04.Lesson04Activity">
+        <activity android:name=".SampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".lesson01.Lesson01Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lesson02.Lesson02Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lesson03.Lesson03Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lesson04.Lesson04Activity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
