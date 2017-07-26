@@ -11,6 +11,7 @@ import com.yjt.opengles.lesson01.Lesson01Activity;
 import com.yjt.opengles.lesson02.Lesson02Activity;
 import com.yjt.opengles.lesson03.Lesson03Activity;
 import com.yjt.opengles.lesson04.Lesson04Activity;
+import com.yjt.opengles.v2.lesson1.Lesson1Activity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -67,6 +68,7 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
                 startActivityX(Lesson04Activity.class);
                 break;
             case R.id.lesson05_btn:
+                startActivityX(Lesson1Activity.class);
                 break;
             default:
                 break;
