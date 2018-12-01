@@ -11,6 +11,7 @@ import com.yjt.opengles.lesson01.Lesson01Activity;
 import com.yjt.opengles.lesson02.Lesson02Activity;
 import com.yjt.opengles.lesson03.Lesson03Activity;
 import com.yjt.opengles.lesson04.Lesson04Activity;
+import com.yjt.opengles.renderbitmap.RenderBitmapActivity;
 import com.yjt.opengles.v2.lesson1.Lesson1Activity;
 
 import butterknife.BindView;
@@ -33,6 +34,9 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
     Button lesson04Btn;
     @BindView(R.id.lesson05_btn)
     Button lesson05Btn;
+    @BindView(R.id.renderbitmap_btn)
+    Button renderBitmapBtn;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,6 +49,7 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
         lesson03Btn.setOnClickListener(this);
         lesson04Btn.setOnClickListener(this);
         lesson05Btn.setOnClickListener(this);
+        renderBitmapBtn.setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +75,9 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.lesson05_btn:
                 startActivityX(Lesson1Activity.class);
                 break;
+            case R.id.renderbitmap_btn:
+                startActivityX(RenderBitmapActivity.class);
+                break;
             default:
                 break;
         }
@@ -79,4 +87,5 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
         Intent intent = new Intent(this, clazz);
         startActivity(intent);
     }
+
 }
